@@ -14,7 +14,7 @@ client.on("warn", console.warn);
 client.on("error", console.error);
 
 client.on("ready", () => {
-  bot.user.setGame('with your facebook data')
+  client.user.setGame('with your facebook privacy')
   console.log("Yo this ready!")
 });
 
