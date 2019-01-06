@@ -13,7 +13,10 @@ client.on("warn", console.warn);
 
 client.on("error", console.error);
 
-client.on("ready", () => console.log("Yo this ready!"));
+client.on("ready", () => {
+  bot.user.setGame('with your facebook data')
+  console.log("Yo this ready!")
+});
 
 client.on("disconnect", () =>
   console.log(
@@ -43,6 +46,11 @@ client.on("message", async msg => {
   if (command ==="help") {
     return msg.channel.send(
       "- !play song|link to yt"
+    );
+  }
+  if (command ==="what does the fox say") {
+    return msg.channel.send(
+      "DING DING DING DING DING DING DING DING DING"
     );
   }
   if (command === "play") {
