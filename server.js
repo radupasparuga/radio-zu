@@ -1,11 +1,10 @@
 const { Client, Util } = require("discord.js");
-const { TOKEN, PREFIX, GOOGLE_API_KEY } = require("./config");
 const YouTube = require("simple-youtube-api");
 const ytdl = require("ytdl-core");
 
 const client = new Client({ disableEveryone: true });
 
-const youtube = new YouTube(GOOGLE_API_KEY);
+const youtube = new YouTube(process.env.GOOGLE_API_KEY);
 
 const queue = new Map();
 
@@ -29,7 +28,7 @@ client.on("reconnecting", () => console.log("I am reconnecting now!"));
 client.on("message", async msg => {
   // eslint-disable-line
   if (msg.author.bot) return undefined;
-  if (!msg.content.startsWith(PREFIX)) return undefined;
+  if (!msg.content.startsWith(process.env.PREFIX)) return undefined;
 
   const args = msg.content.split(" ");
   const searchString = args.slice(1).join(" ");
@@ -37,7 +36,7 @@ client.on("message", async msg => {
   const serverQueue = queue.get(msg.guild.id);
 
   let command = msg.content.toLowerCase().split(" ")[0];
-  command = command.slice(PREFIX.length);
+  command = command.slice(process.env.PREFIX.length);
   if (command ==="credit") {
     return msg.channel.send(
       "Sadokaah is a god"
@@ -246,4 +245,4 @@ function play(guild, song) {
   serverQueue.textChannel.send(`🎶 Start playing: **${song.title}**`);
 }
 
-client.login(TOKEN);
+client.login(process.env.TOKEN);
