@@ -1,0 +1,19 @@
+{
+  "name": "suicide-gang",
+  "version": "1.0.0",
+  "description": "gangbang",
+  "main": "server.js",
+  "start": "node server.js",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "node-opus": "^0.2.7",
+    "simple-youtube-api": "^5.0.2",
+    "ytdl-core": "^0.20.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
