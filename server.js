@@ -35,7 +35,16 @@ client.on("message", async msg => {
 
   let command = msg.content.toLowerCase().split(" ")[0];
   command = command.slice(PREFIX.length);
-
+  if (command ==="credit") {
+    return msg.channel.send(
+      "Sadokaah is a god"
+    );
+  }
+  if (command ==="help") {
+    return msg.channel.send(
+      "- !play song|link to yt"
+    );
+  }
   if (command === "play") {
     const voiceChannel = msg.member.voiceChannel;
     if (!voiceChannel)
