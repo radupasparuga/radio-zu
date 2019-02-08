@@ -52,6 +52,16 @@ client.on("message", async msg => {
       "DING DING DING DING DING DING DING DING DING"
     );
   }
+  if (command ==="ree") {
+    return msg.channel.send(
+      "https://i.kym-cdn.com/photos/images/newsfeed/000/915/652/b49.gif"
+    );
+  }
+  if (command ==="nani") {
+    return msg.channel.send(
+      "https://tenor.com/ZflB.gif"
+    );
+  }
   if (command === "play") {
     const voiceChannel = msg.member.voiceChannel;
     if (!voiceChannel)
