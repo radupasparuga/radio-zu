@@ -44,12 +44,7 @@ client.on("message", async msg => {
   }
   if (command ==="help") {
     return msg.channel.send(
-      "- !play song|link to yt"
-    );
-  }
-  if (command ==="what does the fox say") {
-    return msg.channel.send(
-      "DING DING DING DING DING DING DING DING DING"
+      "- !help: list of commands \n- !credit: credit to the author \n - !ree: sends ree gif \n- !du: hast \n- !nani: sends nani gif \n- !jesus: our lord and saviour \n- !play: song name/youtube song link/youtube playlist link (you need to be in a voice channel to activate this command) \n Commands available while a song is playing \n - !skip \n - !stop \n - !volume (0-infinity)  \n - !pause \n - !resume  \n - !np (now playing, shows the current playing track)"
     );
   }
   if (command ==="ree") {
