@@ -62,6 +62,16 @@ client.on("message", async msg => {
       "https://tenor.com/ZflB.gif"
     );
   }
+  if (command ==="du" || command ==="DU" || command === "Du" || command === "dU") {
+    return msg.channel.send(
+      "HAST"
+    );
+  }
+  if(command === "jesus" || command === "Jesus" || command === "Holy") {
+    return msg.channel.send(
+      "https://tenor.com/UkBV.gif"
+    )
+  }
   if (command === "play") {
     const voiceChannel = msg.member.voiceChannel;
     if (!voiceChannel)
