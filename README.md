@@ -1,7 +1,7 @@
 # Radio ZU 
 A discord bot coded in Node.js using the Discord.js library
 
-# V 1.0
+# V 1.1
 Basic commands:
   - !help: list of commands
   - !credit: credit to the author
