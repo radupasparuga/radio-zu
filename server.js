@@ -34,8 +34,11 @@ client.on("message", async msg => {
   const searchString = args.slice(1).join(" ");
   const url = args[1] ? args[1].replace(/<(.+)>/g, "$1") : "";
   const serverQueue = queue.get(msg.guild.id);
-
+  let yeee = "und ich hab nichts gesagt"
   let command = msg.content.toLowerCase().split(" ")[0];
+  let hast = msg.content.toLowerCase().split(" ")[1];
+  let mich = msg.content.toLowerCase().split(" ")[2];
+  let gefragt = msg.content.toLowerCase().split(" ")[3];
   command = command.slice(process.env.PREFIX.length);
   if (command ==="credit") {
     return msg.channel.send(
@@ -57,7 +60,19 @@ client.on("message", async msg => {
       "https://tenor.com/ZflB.gif"
     );
   }
-  if (command ==="du" || command ==="DU" || command === "Du" || command === "dU") {
+  if(hast.toLowerCase() === "hast" && command.toLowerCase === "du" && mich === "mich" && gefragt === "gefragt"){
+    return msg.channel.send(
+      yeee.toUpperCase
+    )
+  }else if(hast.toLowerCase() === "hast" && command.toLowerCase === "du" && mich === "mich"){
+    return msg.channel.send(
+      "GEFRAGT"
+    )
+  }else if(hast.toLowerCase() === "hast" && command.toLowerCase === "du"){
+    return msg.channel.send(
+      "MICH"
+    )
+  }else if (command ==="du" || command ==="DU" || command === "Du" || command === "dU") {
     return msg.channel.send(
       "HAST"
     );
@@ -65,6 +80,11 @@ client.on("message", async msg => {
   if(command === "jesus" || command === "Jesus" || command === "Holy") {
     return msg.channel.send(
       "https://tenor.com/UkBV.gif"
+    )
+  }
+  if(command === "yemen") {
+    return msg.channel.send(
+      "https://media.giphy.com/media/3ohzdRVxJdYbiAYgVi/giphy.gif"
     )
   }
   if (command === "play") {
