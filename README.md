@@ -6,7 +6,8 @@ Basic commands:
   - !help: list of commands
   - !credit: credit to the author
   - !ree: sends ree gif
-  - !du: hast
+  - !du: hast (easter egg)
+  - !yemen: ye men
   - !nani: sends nani gif
   - !jesus: our lord and saviour
   - !play: song name/youtube song link/youtube playlist link (you need to be in a voice channel to activate this command)
