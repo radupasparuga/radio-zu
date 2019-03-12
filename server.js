@@ -34,12 +34,21 @@ client.on("message", async msg => {
   const searchString = args.slice(1).join(" ");
   const url = args[1] ? args[1].replace(/<(.+)>/g, "$1") : "";
   const serverQueue = queue.get(msg.guild.id);
+  const length = args.length
+  let hast, mich, gefragt;
+  if(length >= 2) {
+    hast = args[1].toLowerCase();
+  }
+  if(length >= 3) {
+    mich = args[2].toLowerCase();
+    console.log(mich)
+  }
+  if(length >= 4) {
+    gefragt = args[3].toLowerCase();
+  }
   let yeee = "und ich hab nichts gesagt"
   let command = msg.content.toLowerCase().split(" ")[0];
-  /*let hast = args[2].toLowerCase();
-  let mich = args[3].toLowerCase();
-  let gefragt = args[4].toLowerCase(); */
-  command = command.slice(process.env.PREFIX.length);
+  command = command.slice(1);
   if (command ==="credit") {
     return msg.channel.send(
       "Sadokaah is a god"
@@ -55,36 +64,48 @@ client.on("message", async msg => {
       "https://i.kym-cdn.com/photos/images/newsfeed/000/915/652/b49.gif"
     );
   }
-  if (command ==="nani") {
+  if (command === "nani") {
+    console.log(command)
     return msg.channel.send(
       "https://tenor.com/ZflB.gif"
     );
   }
-  if(hast.toLowerCase() === "hast" && command.toLowerCase === "du" && mich === "mich" && gefragt === "gefragt"){
+  if(hast === "hast" && command === "du" && mich === "mich" && gefragt === "gefragt"){
     return msg.channel.send(
-      yeee.toUpperCase
+      yeee.toUpperCase()
     )
-  }else if(hast.toLowerCase() === "hast" && command.toLowerCase === "du" && mich === "mich"){
+  }
+  console.log(mich)
+  if(hast === "hast" && command === "du" && mich === "mich"){
     return msg.channel.send(
       "GEFRAGT"
     )
-  }else if(hast.toLowerCase() === "hast" && command.toLowerCase === "du"){
+  }
+  if(hast === "hast" && command === "du"){
     return msg.channel.send(
       "MICH"
     )
-  }else if (command ==="du" || command ==="DU" || command === "Du" || command === "dU") {
+  }
+  if (command ==="du" || command ==="DU" || command === "Du" || command === "dU") {
     return msg.channel.send(
       "HAST"
     );
   }
   if(command === "jesus" || command === "Jesus" || command === "Holy") {
+    console.log("i got ot jesusx2")
     return msg.channel.send(
       "https://tenor.com/UkBV.gif"
-    )
+    );
   }
   if(command === "yemen") {
     return msg.channel.send(
       "https://media.giphy.com/media/3ohzdRVxJdYbiAYgVi/giphy.gif"
+    )
+  }
+
+  if(command === "f") {
+    return msg.channel.send(
+      "https://tenor.com/16lb.gif"
     )
   }
   if (command === "play") {
