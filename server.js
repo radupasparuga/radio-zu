@@ -36,9 +36,9 @@ client.on("message", async msg => {
   const serverQueue = queue.get(msg.guild.id);
   let yeee = "und ich hab nichts gesagt"
   let command = msg.content.toLowerCase().split(" ")[0];
-  let hast = msg.content.toLowerCase().split(" ")[1];
-  let mich = msg.content.toLowerCase().split(" ")[2];
-  let gefragt = msg.content.toLowerCase().split(" ")[3];
+  let hast = args[2].toLowerCase();
+  let mich = args[3].toLowerCase();
+  let gefragt = args[4].toLowerCase();
   command = command.slice(process.env.PREFIX.length);
   if (command ==="credit") {
     return msg.channel.send(
