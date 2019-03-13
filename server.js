@@ -64,6 +64,17 @@ client.on("message", async msg => {
       "https://i.kym-cdn.com/photos/images/newsfeed/000/915/652/b49.gif"
     );
   }
+  if (command === "communism") {
+    return msg.channel.send(
+      "https://gph.is/1chYNed"
+    )
+  }
+  if (command === "wow") {
+    console.log(command)
+    return msg.channel.send(
+      "https://tenor.com/view/umm-confused-wtf-blinking-okay-gif-7513882"
+    );
+  }
   if (command === "nani") {
     console.log(command)
     return msg.channel.send(
