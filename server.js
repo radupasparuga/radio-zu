@@ -56,8 +56,43 @@ client.on("message", async msg => {
   }
   if (command ==="help") {
     return msg.channel.send(
-      "- !help: list of commands \n- !credit: credit to the author \n - !ree: sends ree gif \n- !du: hast (easter egg) \n !yemen: ye men \n - !nani: sends nani gif \n- !jesus: our lord and saviour \n- !play: song name/youtube song link/youtube playlist link (you need to be in a voice channel to activate this command) \n Commands available while a song is playing \n - !skip \n - !stop \n - !volume (0-infinity)  \n - !pause \n - !resume  \n - !np (now playing, shows the current playing track)"
+      "- !help: list of commands \n- !credit: credit to the author \n - !kiss: <3  \n- !roger: roger roger \n- !slap1: slap dat ass \n- !slap2: can never have too many slaps \n- !ree: sends ree gif \n- !slapb: slap that b-ass \n- !naughtyslap: can never have too many slaps \n-!sigh: oof \n- !ree: sends ree gif \n- !du: hast (easter egg) \n- !yemen: ye men \n - !nani: sends nani gif \n- !jesus: our lord and saviour \n- !play: song name/youtube song link/youtube playlist link (you need to be in a voice channel to activate this command) \n Commands available while a song is playing \n - !skip \n - !stop \n - !volume (0-infinity)  \n - !pause \n - !resume  \n - !np (now playing, shows the current playing track)"
     );
+  }
+  if (command ==="kiss") {
+    return msg.channel.send(
+      "https://tenor.com/view/selenagomez-gomez-selena-kiss-blowkiss-gif-7520436"
+    );
+  }
+  if (command === "roger") {
+    return msg.channel.send(
+      "https://tenor.com/view/roger-roger-roger-star-wars-the-phantom-menace-droids-gif-4890643"
+    )
+  }
+  if (command === "slap1") {
+    return msg.channel.send(
+      "https://tenor.com/sWaE.gif"
+    )
+  }
+  if (command === "slap2") {
+    return msg.channel.send(
+      "https://tenor.com/vX72.gif"
+    )
+  }
+  if (command === "slapb") {
+    return msg.channel.send(
+      "https://giphy.com/gifs/guitar-bass-9Q3EmYkMu4Fvq"
+    )
+  }
+  if (command === "sigh") {
+    return msg.channel.send(
+      "https://tenor.com/sL9X.gif"
+    )
+  }
+  if (command === "naughtyslap") {
+    return msg.channel.send(
+      "https://giphy.com/gifs/kevin-mccarthy-insticatorcom-nv9Udp8t61RF6"
+    )
   }
   if (command ==="ree") {
     return msg.channel.send(
