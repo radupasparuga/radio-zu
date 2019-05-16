@@ -60,6 +60,11 @@ client.on("message", async msg => {
       "- !help: list of commands \n- !credit: credit to the author \n - !woah: woah  \n - !feelsbadman: sad reacts only  \n - !kiss: <3  \n- !roger: roger roger \n- !slap1: slap dat ass \n- !slap2: can never have too many slaps \n- !ree: sends ree gif \n- !slapb: slap that b-ass \n- !naughtyslap: can never have too many slaps \n-!sigh: oof \n- !ree: sends ree gif \n- !du: hast (easter egg) \n- !yemen: ye men \n - !nani: sends nani gif \n- !jesus: our lord and saviour \n- !play: song name/youtube song link/youtube playlist link (you need to be in a voice channel to activate this command) \n Commands available while a song is playing \n - !skip \n - !stop \n - !volume (0-infinity)  \n - !pause \n - !resume  \n - !np (now playing, shows the current playing track)"
     );
   }
+  if (command ==="ricardo") {
+    return msg.channel.send(
+      "https://tenor.com/view/flick-esfand-esfandtv-ricardo-milos-ricardo-flick-gif-13730968"
+    );
+  }
   if (command ==="woah") {
     return msg.channel.send(
       "https://tenor.com/view/shocked-bitch-please-what-umm-gif-8179914"
