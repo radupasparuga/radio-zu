@@ -7,12 +7,12 @@ client.music = require("discord.js-musicbot-addon");
 client.music.start(client, {
   youtubeKey: process.env.GOOGLE_API_KEY,
   maxQueueSize: 0,
-  anyoneCanSkip: True,
-  anyoneCanAdjust: True,
-  anyoneCanLeave: True,
-  logging: True,
-  musicPresence: True,
-  clearPresence: True
+  anyoneCanSkip: true,
+  anyoneCanAdjust: true,
+  anyoneCanLeave: true,
+  logging: true,
+  musicPresence: true,
+  clearPresence: true
 });
 
 
