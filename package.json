@@ -5,9 +5,13 @@
   "main": "server.js",
   "start": "node server.js",
   "dependencies": {
+    "custom-env": "^1.0.2",
     "discord.js": "^11.3.2",
+    "discord.js-musicbot-addon": "^13.6.0",
+    "ffmpeg": "0.0.4",
     "node-opus": "^0.2.7",
     "nodemon": "^1.18.10",
+    "prism-media": "github:hydrabolt/prism-media",
     "simple-youtube-api": "^5.0.2",
     "ytdl-core": "^0.20.4"
   },
